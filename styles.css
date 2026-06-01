@@ -402,6 +402,7 @@ nav ul a:hover { color: var(--teal); }
 #app {
   background: var(--texto);
   color: #fff;
+  position: relative;  /* ← agregar esto */
 }
 #app h2 { color: #fff; }
 #app h2 em {
@@ -418,6 +419,7 @@ nav ul a:hover { color: var(--teal); }
   gap: 3rem;
   align-items: center;
   margin-bottom: 4.5rem;
+  position: relative;
 }
 #app .intro p {
   color: rgba(255,255,255,.7);
@@ -430,6 +432,22 @@ nav ul a:hover { color: var(--teal); }
   border-radius: var(--r);
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+/* Tera decorativa — asomándose desde el video */
+.tera-deco {
+  position: absolute;
+  right: -30px;
+  bottom: -40px;
+  width: 160px;
+  pointer-events: none;
+  z-index: 3;
+  animation: flotar 3.5s ease-in-out infinite;
+  filter: drop-shadow(0 12px 20px rgba(0,0,0,.35));
+}
+.tera-deco img {
+  width: 100%;
+  display: block;
 }
 
 /* Sub-bloque "¿Te pasa esto?" */
@@ -1071,6 +1089,7 @@ footer strong { color: var(--mostaza-claro); font-weight: 500; }
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
+  .tera-deco { display: none; }
   .hero-media { order: -1; max-width: 480px; margin: 0 auto; }
   .grilla-planes,
   .grilla-web,
