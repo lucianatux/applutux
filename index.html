@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apps de gestión a medida (Tero Gestión) y sitios web para tu negocio. Hecho en Córdoba, sin cuota mensual."
+    />
+    <title>Lu Tux — Apps y webs para tu negocio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============== NAV ============== -->
+    <nav id="nav">
+      <a class="logo" href="#inicio">Lu Tux</a>
+      <ul>
+        <li><a href="#app">Apps</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#cloud">Otras opciones</a></li>
+        <li><a href="#web">Sitios web</a></li>
+        <li><a href="#cta">Contacto</a></li>
+      </ul>
+      <a
+        class="btn btn-mostaza nav-cta"
+        href="https://wa.me/5493512309375?text=Hola!%20quiero%20consultar"
+        >Charlemos →</a
+      >
+      <button class="ham" id="ham" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- menú mobile -->
+    <div class="menu-mob" id="mob">
+      <button onclick="cerrarMenu()" aria-label="Cerrar menú">✕</button>
+      <a href="#app" onclick="cerrarMenu()">Apps</a>
+      <a href="#planes" onclick="cerrarMenu()">Planes</a>
+      <a href="#cloud" onclick="cerrarMenu()">Opciones</a>
+      <a href="#web" onclick="cerrarMenu()">Sitios web</a>
+      <a href="#cta" onclick="cerrarMenu()">Contacto</a>
+      <a class="btn btn-mostaza" href="https://wa.me/5493512309375"
+        >Charlemos →</a
+      >
+    </div>
+
+    <!-- ============== HERO ============== -->
+    <section id="hero" aria-label="Inicio">
+      <div class="wrap">
+        <div class="copy">
+          <p class="eyebrow">● Para polirubros y comercios cordobeses</p>
+          <h1>Tu negocio,<br /><em>ordenado</em><br />de una vez.</h1>
+          <p class="lead">
+            Una app simple para ordenar tu negocio y una web que vende por vos.
+            Sin complicaciones, hecho con dedicación y mate🧉
+          </p>
+          <div class="hero-btns">
+            <a class="btn btn-mostaza" href="#planes">Ver planes →</a>
+            <a
+              class="btn btn-fantasma"
+              href="https://wa.me/5493512309375?text=Quiero%20una%20demo"
+              >Pedir demo</a
+            >
+          </div>
+          <div class="hero-chips">
+            <span>✓ Sin internet</span>
+            <span>✓ Sin cuota mensual</span>
+            <span>✓ Instalación incluida</span>
+          </div>
+        </div>
+
+        <div class="hero-media sr">
+          <!-- PLACEHOLDER: poné un video o captura grande de la app -->
+          <div class="ph">
+            <span>🎬</span>
+            <b>Video principal · 30–60 seg</b>
+            <p>
+              La app funcionando en el mostrador. Mano al teclado, venta real,
+              cuánto ganó en el día.
+            </p>
+          </div>
+
+          <!-- Chips flotantes — patrón exacto de tu referencia -->
+          <div class="flotante">
+            📦 Stock · Ventas · Clientes en un solo lugar
+          </div>
+          <div class="flotante">✓ Sin cuota mensual</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== APP (Tero Gestión + ¿Te pasa esto?) ============== -->
+    <section id="app">
+      <div class="wrap">
+        <!-- Intro de la app -->
+        <div class="intro sr">
+          <div>
+            <p class="kicker">// la app</p>
+            <h2>Tero Gestión: todo tu negocio en <em>una pantalla.</em></h2>
+            <p>
+              App para PC (y celu) pensada para que dejes el cuaderno de
+              cuentas. Fácil de usar, sin internet, sin cuota mensual, con tu
+              logo.
+            </p>
+            <a class="btn btn-teal" href="#planes">Quiero verla →</a>
+          </div>
+          <div class="ph">
+            <span>🏪</span>
+            <b>Foto o video · 15 seg</b>
+            <p>La app instalada en el mostrador, con el comercio de fondo.</p>
+          </div>
+        </div>
+
+        <!-- ¿Te pasa esto? (sub-bloque dentro de APP, NO va al índice) -->
+        <div class="probs">
+          <article class="card oscura">
+            <div class="card-ilustracion">
+              <img
+                src="assets/latera1.png"
+                alt="La Tera abrumada con el cuaderno de fiados"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-contenido">
+              <h4>Tu cuaderno de fiados es una novela</h4>
+              <p>
+                Ves quién te debe, cuánto y desde cuándo. Sin borrones, sin
+                "che, ¿cuánto te debía?"
+              </p>
+            </div>
+          </article>
+
+          <article class="card oscura">
+            <div class="card-ilustracion">
+              <img
+                src="assets/latera2.png"
+                alt="La Tera cansada con calculadora de noche"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-contenido">
+              <h4>Sumás con calculadora a las 9 de la noche</h4>
+              <p>
+                Cierre del día listo en 2 clicks. Cuánto vendiste, cuánto entró,
+                cuánto ganaste.
+              </p>
+            </div>
+          </article>
+
+          <article class="card oscura">
+            <div class="card-ilustracion">
+              <img
+                src="assets/latera3.png"
+                alt="La Tera persiguiendo billetes que se le vuelan"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-contenido">
+              <h4>Subiste los costos y los precios siguen iguales</h4>
+              <p>
+                Actualizás todo el catálogo con un solo número. Chau perder
+                plata sin darte cuenta.
+              </p>
+            </div>
+          </article>
+
+          <article class="card oscura">
+            <div class="card-ilustracion">
+              <img
+                src="assets/latera4.png"
+                alt="La Tera confundida con monedas y billetes"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-contenido">
+              <h4>Vendés, pero no sabés si ganaste</h4>
+              <p>
+                Margen real por categoría, claro y a la vista. Sabés qué te
+                conviene vender.
+              </p>
+            </div>
+          </article>
+
+          <article class="card oscura">
+            <div class="card-ilustracion">
+              <img
+                src="assets/latera5.png"
+                alt="La Tera frente a un estante vacío"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-contenido">
+              <h4>Te enterás que no hay stock cuando te lo pide el cliente</h4>
+              <p>
+                Alertas automáticas cuando algo se está acabando. Reponés antes
+                de quedar mal.
+              </p>
+            </div>
+          </article>
+
+          <article class="card oscura">
+            <div class="card-ilustracion">
+              <img
+                src="assets/latera6.png"
+                alt="La Tera enredada en cintas armando promos"
+                loading="lazy"
+              />
+            </div>
+            <div class="card-contenido">
+              <h4>Armar promos te lleva media tarde</h4>
+              <p>
+                Combos y descuentos en 3 clicks, listos para mandar por WhatsApp
+                a tu clientela.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== PLANES APP ============== -->
+    <section id="planes">
+      <div class="wrap">
+        <div class="head-centro sr">
+          <p class="kicker">// los planes</p>
+          <h2>Elegí tu plan. <em>Pagás una sola vez.</em></h2>
+          <p class="lead-centro">
+            Sin cuotas, sin sorpresas, sin letra chica. La app queda tuya para
+            siempre.
+          </p>
+        </div>
+
+        <div class="grilla-planes sr">
+          <article class="plan">
+            <span class="plan-etiqueta">essential</span>
+            <h3>App Essential</h3>
+            <strong>$120.000</strong>
+            <small>pago único · sin cuota mensual</small>
+            <ul>
+              <li>Buscador y filtros por categoría</li>
+              <li>Carga y edición de productos</li>
+              <li>Margen de ganancia</li>
+              <li>Imprimir venta</li>
+              <li>Modo oscuro</li>
+            </ul>
+            <a
+              href="https://wa.me/5493512309375?text=Hola!%20quiero%20la%20App%20Essential"
+              >Quiero esta →</a
+            >
+          </article>
+
+          <article class="plan">
+            <span class="plan-etiqueta">classic</span>
+            <h3>App Classic</h3>
+            <strong>$220.000</strong>
+            <small>pago único · sin cuota mensual</small>
+            <ul>
+              <li class="prev">Todo lo de Essential</li>
+              <li>Estadísticas de ventas</li>
+              <li>Armador de promos</li>
+              <li>Desglose por medio de pago</li>
+            </ul>
+            <a
+              href="https://wa.me/5493512309375?text=Hola!%20quiero%20la%20App%20Classic"
+              >Quiero esta →</a
+            >
+          </article>
+
+          <article class="plan top">
+            <div class="top-badge">⭐ Más elegida</div>
+            <span class="plan-etiqueta">plus</span>
+            <h3>App Plus</h3>
+            <strong>$260.000</strong>
+            <small>pago único · sin cuota mensual</small>
+            <ul>
+              <li class="prev">Todo lo de Classic</li>
+              <li>Stock e inventario</li>
+              <li>Gestión de fiados</li>
+              <li>Alertas de stock bajo</li>
+            </ul>
+            <a
+              href="https://wa.me/5493512309375?text=Hola!%20quiero%20la%20App%20Plus"
+              >Quiero esta →</a
+            >
+          </article>
+
+          <article class="plan">
+            <span class="plan-etiqueta">premium</span>
+            <h3>App Premium</h3>
+            <strong>$290.000</strong>
+            <small>pago único · sin cuota mensual</small>
+            <ul>
+              <li class="prev">Todo lo de Plus</li>
+              <li>Una funcionalidad nueva pensada para vos</li>
+              <li>Lo charlamos y la diseñamos juntas</li>
+            </ul>
+            <a
+              href="https://wa.me/5493512309375?text=Hola!%20quiero%20la%20App%20Premium"
+              >Quiero esta →</a
+            >
+          </article>
+        </div>
+
+        <!-- Beneficios extra de todos los planes -->
+        <div class="benes sr">
+          <span>🔧 Instalación incluida</span>
+          <span>🎨 Tu logo en la app</span>
+          <span>📵 Funciona sin internet</span>
+          <span>📋 Tutorial en PDF</span>
+          <span>💸 Sin cuota mensual</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== OTRAS POSIBILIDADES (Cloud) ============== -->
+    <section id="cloud">
+      <div class="wrap">
+        <div class="split sr">
+          <div>
+            <p class="kicker">// otras opciones</p>
+            <h2>¿Preferís algo online <em>y mensual?</em></h2>
+            <p>
+              Estamos cocinando una versión en la nube de Tero Gestión: la abrís
+              desde cualquier dispositivo, sin instalar nada, con respaldo
+              automático y suscripción mensual. Si te interesa, anotate y te
+              avisamos cuando esté lista.
+            </p>
+
+            <ul class="checklist">
+              <li>
+                <strong>Sin instalación.</strong> Entrás desde el navegador.
+              </li>
+              <li><strong>Multidispositivo.</strong> PC, tablet o celu.</li>
+              <li>
+                <strong>Respaldo en la nube.</strong> Tus datos siempre seguros.
+              </li>
+              <li>
+                <strong>Mejoras continuas.</strong> Actualizaciones todos los
+                meses.
+              </li>
+            </ul>
+
+            <a
+              class="btn btn-mostaza"
+              href="https://wa.me/5493512309375?text=Quiero%20la%20lista%20de%20espera%20de%20Tero%20Cloud"
+              >Anotame en la lista →</a
+            >
+          </div>
+
+          <aside class="cloud-card">
+            <span class="cloud-tag">próximamente</span>
+            <div class="cloud-big">Tero <em>Cloud</em></div>
+            <p>
+              Misma esencia, sin cables. Una versión liviana, sincronizada y
+              siempre actualizada.
+            </p>
+            <div class="cloud-pulse"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== SITIOS WEB ============== -->
+    <section id="web">
+      <div class="wrap">
+        <div class="head-centro sr">
+          <p class="kicker kicker-claro">// sitios web</p>
+          <h2>Tus clientes te buscan en Google. <em>¿Te encuentran?</em></h2>
+          <p class="lead-centro lead-claro">
+            Páginas web con catálogo y pedidos por WhatsApp. Los precios los
+            charlamos según lo que necesites — abajo te dejamos los formatos que
+            más nos piden.
+          </p>
+        </div>
+
+        <div class="grilla-web sr">
+          <article class="wp">
+            <i>🏷️</i>
+            <h3>Landing Informativa</h3>
+            <small>Presencia online rápida</small>
+            <ul>
+              <li>Info de tu negocio</li>
+              <li>Catálogo con fotos</li>
+              <li>Botón de WhatsApp</li>
+              <li>Hasta 100 productos</li>
+            </ul>
+            <p class="wp-ideal">Para tener presencia online sin vueltas.</p>
+          </article>
+
+          <article class="wp mejor">
+            <i>🛒</i>
+            <h3>Catálogo con Pedidos</h3>
+            <small>Tus clientes arman el pedido solos</small>
+            <ul>
+              <li>Todo lo anterior</li>
+              <li>Carrito de pedidos</li>
+              <li>Pedido directo por WhatsApp</li>
+              <li>Hasta 800 productos</li>
+            </ul>
+            <p class="wp-ideal">Para vender sin volverte loca respondiendo.</p>
+          </article>
+
+          <article class="wp">
+            <i>⚙️</i>
+            <h3>Catálogo Pro</h3>
+            <small>Para catálogos grandes</small>
+            <ul>
+              <li>Todo lo anterior</li>
+              <li>Productos ilimitados</li>
+              <li>Panel propio para cargar</li>
+            </ul>
+            <p class="wp-ideal">Para catálogos que cambian seguido.</p>
+          </article>
+
+          <article class="wp">
+            <i>🏆</i>
+            <h3>Tienda Completa</h3>
+            <small>Presencia profesional total</small>
+            <ul>
+              <li>Todo lo anterior</li>
+              <li>Estadísticas de visitas</li>
+              <li>Función personalizada</li>
+              <li>Dominio incluido el primer año</li>
+            </ul>
+            <p class="wp-ideal">El paquete completo, en serio.</p>
+          </article>
+        </div>
+
+        <div class="web-cta sr">
+          <p>
+            Diseño para celu y PC · Tu logo y colores · Se paga una sola vez
+          </p>
+          <a
+            class="btn btn-blanco"
+            href="https://wa.me/5493512309375?text=Quiero%20una%20web!%20Cont%C3%A1me%20qu%C3%A9%20necesito."
+            >Tirame un mensaje →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CTA / CONTACTO ============== -->
+    <section id="cta">
+      <h2>Llevá tu negocio al<br /><em>siguiente nivel.</em></h2>
+      <p>
+        Contanos qué necesitás y te respondemos en el día. Sin compromiso, sin
+        tecnicismos. Si no sabés bien por dónde empezar, también vale.
+      </p>
+      <div class="cta-btns">
+        <a
+          class="btn btn-teal"
+          href="https://wa.me/5493512309375?text=Hola!%20quiero%20consultar"
+          >📱 Escribinos al WhatsApp</a
+        >
+        <a
+          class="btn btn-fantasma-oscuro"
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener"
+          >📸 Instagram</a
+        >
+        <a
+          class="btn btn-fantasma-oscuro"
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener"
+          >📘 Facebook</a
+        >
+      </div>
+      <small>📍 Córdoba Capital · 351 230-9375</small>
+    </section>
+
+    <!-- ============== FOOTER ============== -->
+    <footer>
+      <p>
+        © <span id="year">2026</span> · Hecho con
+        <strong>cariño y mate</strong> en Córdoba, Argentina ♥
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
