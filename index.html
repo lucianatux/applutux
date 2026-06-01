@@ -21,7 +21,15 @@
   <body>
     <!-- ============== NAV ============== -->
     <nav id="nav">
-      <a class="logo" href="#inicio">Lu Tux</a>
+      <a class="logo" href="#inicio"
+        >Lu Tux
+        <img
+          class="logo-img"
+          src="assets/logoLuTux.png"
+          alt="Tero Gestión en el mostrador"
+          loading="lazy"
+        />
+      </a>
       <ul>
         <li><a href="#app">Apps</a></li>
         <li><a href="#planes">Planes</a></li>
@@ -60,7 +68,7 @@
           <h1>Tu negocio,<br /><em>ordenado</em><br />de una vez.</h1>
           <p class="lead">
             Una app simple para ordenar tu negocio y una web que vende por vos.
-            Sin complicaciones, hecho con dedicación y mate🧉
+            Sin complicaciones.
           </p>
           <div class="hero-btns">
             <a class="btn btn-mostaza" href="#planes">Ver planes →</a>
@@ -78,7 +86,7 @@
         </div>
 
         <div class="hero-media sr">
-          <!-- PLACEHOLDER: poné un video o captura grande de la app -->
+          <!-- PLACEHOLDER: poné un video o captura grande de la app 
           <div class="ph">
             <span>🎬</span>
             <b>Video principal · 30–60 seg</b>
@@ -87,6 +95,12 @@
               cuánto ganó en el día.
             </p>
           </div>
+          -->
+          <img
+            src="assets/teroappennegocio.png"
+            alt="Tero Gestión en el mostrador"
+            loading="lazy"
+          />
 
           <!-- Chips flotantes — patrón exacto de tu referencia -->
           <div class="flotante">
@@ -104,7 +118,16 @@
         <div class="intro sr">
           <div>
             <p class="kicker">// la app</p>
-            <h2>Tero Gestión: todo tu negocio en <em>una pantalla.</em></h2>
+            <h2>
+              <img
+                class="logo-tero-img"
+                src="assets/terocircle.png"
+                alt="Tero Gestión en el mostrador"
+                loading="lazy"
+              />
+
+              Tero Gestión: todo tu negocio en <em>una pantalla.</em>
+            </h2>
             <p>
               App para PC (y celu) pensada para que dejes el cuaderno de
               cuentas. Fácil de usar, sin internet, sin cuota mensual, con tu
@@ -112,11 +135,10 @@
             </p>
             <a class="btn btn-teal" href="#planes">Quiero verla →</a>
           </div>
-          <div class="ph">
-            <span>🏪</span>
-            <b>Foto o video · 15 seg</b>
-            <p>La app instalada en el mostrador, con el comercio de fondo.</p>
-          </div>
+            <video autoplay muted playsinline controls>
+              <source src="assets/teroapp31s.mp4" type="video/mp4" />
+            </video>
+          
         </div>
 
         <!-- ¿Te pasa esto? (sub-bloque dentro de APP, NO va al índice) -->
@@ -140,14 +162,14 @@
                   />
                 </div>
                 <div class="card-contenido card-dolor">
-                  <h4>¿Tu cuaderno de fiados parece una novela?</h4>
+                  <h4>¿Tu cuaderno de fiados es un quilombo?</h4>
                 </div>
               </div>
 
               <div class="card-lado">
                 <div class="card-ilustracion">
                   <img
-                    src="assets/latera1-solucion.png"
+                    src="assets/app1a1/clientes11.jpg"
                     alt="La Tera usando el sistema de fiados de forma organizada"
                     loading="lazy"
                   />
@@ -174,14 +196,14 @@
                   />
                 </div>
                 <div class="card-contenido card-dolor">
-                  <h4>¿Seguís sumando ventas con calculadora?</h4>
+                  <h4>¿Te ponés a la noche a hacer cuentas con calculadora?</h4>
                 </div>
               </div>
 
               <div class="card-lado">
                 <div class="card-ilustracion">
                   <img
-                    src="assets/latera2-solucion.png"
+                    src="assets/app1a1/statshoy11.jpg"
                     alt="La Tera viendo el cierre del día automáticamente"
                     loading="lazy"
                   />
@@ -213,7 +235,7 @@
               <div class="card-lado">
                 <div class="card-ilustracion">
                   <img
-                    src="assets/latera3-solucion.png"
+                    src="assets/app1a1/ganancia11.jpg"
                     alt="La Tera actualizando precios fácilmente"
                     loading="lazy"
                   />
@@ -245,13 +267,13 @@
               <div class="card-lado">
                 <div class="card-ilustracion">
                   <img
-                    src="assets/latera4-solucion.png"
+                    src="assets/app1a1/stats11.jpg"
                     alt="La Tera viendo estadísticas y ganancias"
                     loading="lazy"
                   />
                 </div>
                 <div class="card-contenido card-solucion">
-                  <p>Conocé tu margen real y qué productos más te convienen.</p>
+                  <p>Conocé tu margen real y tus ganancias.</p>
                 </div>
               </div>
             </div>
@@ -277,7 +299,7 @@
               <div class="card-lado">
                 <div class="card-ilustracion">
                   <img
-                    src="assets/latera5-solucion.png"
+                    src="assets/app1a1/stock11.jpg"
                     alt="La Tera recibiendo alertas de stock"
                     loading="lazy"
                   />
@@ -309,13 +331,13 @@
               <div class="card-lado">
                 <div class="card-ilustracion">
                   <img
-                    src="assets/latera6-solucion.png"
+                    src="assets/app1a1/promo11.jpg"
                     alt="La Tera creando promociones fácilmente"
                     loading="lazy"
                   />
                 </div>
                 <div class="card-contenido card-solucion">
-                  <p>Creá combos y descuentos en segundos.</p>
+                  <p>Creá combos listos para enviar por whatsapp.</p>
                 </div>
               </div>
             </div>
@@ -547,35 +569,56 @@
     </section>
 
     <!-- ============== CTA / CONTACTO ============== -->
-    <section id="cta">
-      <h2>Llevá tu negocio al<br /><em>siguiente nivel.</em></h2>
-      <p>
-        Contanos qué necesitás y te respondemos en el día. Sin compromiso, sin
-        tecnicismos. Si no sabés bien por dónde empezar, también vale.
-      </p>
-      <div class="cta-btns">
-        <a
-          class="btn btn-teal"
-          href="https://wa.me/5493512309375?text=Hola!%20quiero%20consultar"
-          >📱 Escribinos al WhatsApp</a
-        >
-        <a
-          class="btn btn-fantasma-oscuro"
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener"
-          >📸 Instagram</a
-        >
-        <a
-          class="btn btn-fantasma-oscuro"
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener"
-          >📘 Facebook</a
-        >
-      </div>
-      <small>📍 Córdoba Capital · 351 230-9375</small>
-    </section>
+<!-- ============== CTA / CONTACTO ============== -->
+<section id="cta">
+  <h2>Llevá tu negocio al<br /><em>siguiente nivel.</em></h2>
+  <p>
+    Contanos qué necesitás y te respondemos en el día. Sin compromiso, sin
+    tecnicismos. Si no sabés bien por dónde empezar, también vale.
+  </p>
+
+  <!-- Equipo -->
+  <div class="equipo">
+    <div class="equipo-persona">
+      <img src="assets/nosotros/lunotebook.png" alt="Luciana" />
+      <strong>Luciana</strong>
+      <span>Rol / descripción</span>
+    </div>
+    <div class="equipo-persona">
+      <img src="assets/nosotros/yernoteboo.png" alt="Nombre Apellido" />
+      <strong>Mariano</strong>
+      <span>Rol / descripción</span>
+    </div>
+    <div class="equipo-persona">
+      <img src="assets/nosotros/kusy.png" alt="Nombre Apellido" />
+      <strong>Kusy</strong>
+      <span>Rol / descripción</span>
+    </div>
+  </div>
+
+  <div class="cta-btns">
+    
+    <a  class="btn btn-teal"
+      href="https://wa.me/5493512309375?text=Hola!%20quiero%20consultar"
+      >📱 Escribinos al WhatsApp</a
+    >
+    
+    <a  class="btn btn-fantasma-oscuro"
+      href="https://www.instagram.com/lutux_software/"
+      target="_blank"
+      rel="noopener"
+      >📸 Instagram</a
+    >
+    
+    <a  class="btn btn-fantasma-oscuro"
+      href="https://www.facebook.com/share/1D23xhbfyW/"
+      target="_blank"
+      rel="noopener"
+      >📘 Facebook</a
+    >
+  </div>
+  <small>📍 Córdoba Capital · 351 230-9375</small>
+</section>
 
     <!-- ============== FOOTER ============== -->
     <footer>

@@ -188,13 +188,17 @@ nav .logo {
   align-items: center;
   gap: .4rem;
 }
-nav .logo::after {
-  content: '';
-  width: 8px; height: 8px;
-  background: var(--mostaza);
-  border-radius: 50%;
-  display: block;
+
+.logo-img{
+  width: 20px;
+  height: auto;
 }
+
+.logo-tero-img{
+  width: 50px;
+  height: auto;
+}
+
 
 nav ul { display: flex; gap: 1.6rem; }
 nav ul a {
@@ -373,6 +377,13 @@ nav ul a:hover { color: var(--teal); }
 .ph b    { color: #fff; font-size: 1rem; font-weight: 600; }
 .ph p    { font-size: .85rem; max-width: 260px; color: rgba(255,255,255,.7); }
 
+.hero-media img,
+.hero-media video {
+  border-radius: var(--r);
+  object-fit: cover;
+  max-height: 380px;
+  width: 100%;
+}
 
 /* =========================================
    6. APP (Tero Gestión + ¿Te pasa esto?)
@@ -401,6 +412,13 @@ nav ul a:hover { color: var(--teal); }
   color: rgba(255,255,255,.7);
   margin-bottom: 1.4rem;
   font-size: 1.05rem;
+}
+
+#app .intro video {
+  width: 100%;
+  border-radius: var(--r);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 /* Sub-bloque "¿Te pasa esto?" */
@@ -980,6 +998,46 @@ nav ul a:hover { color: var(--teal); }
   color: rgba(0,0,0,.45);
   font-size: .82rem;
   font-weight: 500;
+}
+
+.equipo {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0 2.5rem;
+}
+
+.equipo-persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+.equipo-persona img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--teal);
+  transition: transform .2s, border-color .2s;
+}
+
+.equipo-persona img:hover {
+  transform: scale(1.05);
+  border-color: var(--mostaza);
+}
+
+.equipo-persona strong {
+  font-family: var(--fnt-display);
+  font-size: .95rem;
+  color: var(--texto);
+}
+
+.equipo-persona span {
+  font-size: .8rem;
+  color: var(--suave);
 }
 
 footer {
