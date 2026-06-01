@@ -437,7 +437,7 @@ nav ul a:hover { color: var(--teal); }
 /* Tera decorativa — asomándose desde el video */
 .tera-deco {
   position: absolute;
-  right: -30px;
+  left: -20px;
   bottom: -40px;
   width: 160px;
   pointer-events: none;
@@ -1089,7 +1089,11 @@ footer strong { color: var(--mostaza-claro); font-weight: 500; }
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
-  .tera-deco { display: none; }
+    .tera-deco {
+    width: 110px;
+    right: -10px;
+    bottom: -25px;
+  }
   .hero-media { order: -1; max-width: 480px; margin: 0 auto; }
   .grilla-planes,
   .grilla-web,
