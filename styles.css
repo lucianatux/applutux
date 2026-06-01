@@ -406,7 +406,6 @@ nav ul a:hover { color: var(--teal); }
 /* Sub-bloque "¿Te pasa esto?" */
 .dolores-bloque {
   margin-bottom: 4rem;
-  padding-top: 1rem;
   border-top: 1px solid rgba(255,255,255,.08);
   padding-top: 3rem;
 }
@@ -455,21 +454,6 @@ nav ul a:hover { color: var(--teal); }
   transform: scale(1.04);
 }
 
-.card-resuelto {
-  position: absolute;
-  top: .9rem;
-  right: .9rem;
-  background: var(--mostaza);
-  color: var(--texto);
-  padding: .35rem .85rem;
-  border-radius: var(--r-pill);
-  font-size: .68rem;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  box-shadow: 0 4px 12px rgba(0,0,0,.18);
-}
-
 .card-contenido {
   padding: 1.4rem 1.5rem 1.6rem;
   flex: 1;
@@ -485,42 +469,6 @@ nav ul a:hover { color: var(--teal); }
   line-height: 1.55;
 }
 
-
-/* ── CAPTURAS (galería de pantallas reales) ── */
-.capturas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
-  margin-top: 3rem;
-}
-.capturas figure {
-  border-radius: 14px;
-  overflow: hidden;
-  position: relative;
-  margin: 0;
-  background: #fff;
-  aspect-ratio: 16 / 10;
-  transition: transform .3s;
-  cursor: pointer;
-  box-shadow: 0 10px 30px -10px rgba(0,0,0,.4);
-}
-.capturas figure:hover { transform: scale(1.03); }
-.capturas figure img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: top center;
-}
-.capturas figcaption {
-  position: absolute;
-  inset: auto 0 0;
-  padding: 1.5rem .9rem .7rem;
-  background: linear-gradient(transparent, rgba(0,0,0,.85));
-  color: #fff;
-  font-size: .82rem;
-  font-weight: 600;
-}
 
 .card-slider{
   display:flex;
@@ -1057,8 +1005,7 @@ footer strong { color: var(--mostaza-claro); font-weight: 500; }
   .hero-media { order: -1; max-width: 480px; margin: 0 auto; }
   .grilla-planes,
   .grilla-web,
-  .probs,
-  .capturas {
+  .probs {
     grid-template-columns: repeat(2, 1fr);
   }
   nav ul, .nav-cta { display: none; }
@@ -1069,8 +1016,7 @@ footer strong { color: var(--mostaza-claro); font-weight: 500; }
   section { padding: 4rem 1.2rem; }
   .grilla-planes,
   .grilla-web,
-  .probs,
-  .capturas { grid-template-columns: 1fr; }
+  .probs { grid-template-columns: 1fr; }
   #hero::after { width: 0; display: none; }
   #hero { background: var(--teal); }
   .hero-media { max-width: 100%; }
