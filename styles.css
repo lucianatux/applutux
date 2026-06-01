@@ -78,7 +78,7 @@ h4 { font-size: 1.05rem; margin-bottom: .4rem; }
 
 p   { color: var(--suave); }
 a   { text-decoration: none; color: inherit; }
-img { width: 100%; display: block; }
+img { max-width: 100%; display: block; }
 ul  { list-style: none; }
 
 section { padding: 5rem 1.5rem; }
@@ -191,12 +191,16 @@ nav .logo {
 
 .logo-img{
   width: 20px;
+  max-width: 20px;
   height: auto;
+  flex-shrink: 0;
 }
 
 .logo-tero-img{
   width: 50px;
+  max-width: 50px;
   height: auto;
+  flex-shrink: 0;
 }
 
 
@@ -382,6 +386,13 @@ nav ul a:hover { color: var(--teal); }
   border-radius: var(--r);
   object-fit: cover;
   max-height: 380px;
+  width: 100%;
+}
+
+/* Imágenes que deben ocupar su contenedor completo */
+.card-ilustracion img,
+#app .intro video,
+.equipo-persona img {
   width: 100%;
 }
 
