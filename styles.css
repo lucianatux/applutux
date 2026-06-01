@@ -522,6 +522,92 @@ nav ul a:hover { color: var(--teal); }
   font-weight: 600;
 }
 
+.card-slider{
+  display:flex;
+  width:200%;
+  height:100%;
+  transition:transform .55s ease;
+}
+
+.probs .card{
+  overflow:hidden;
+}
+
+.card-lado{
+  width:50%;
+  flex-shrink:0;
+  display:flex;
+  flex-direction:column;
+}
+
+.card-dolor{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:130px;
+}
+
+.card-dolor h4{
+  font-size:1.65rem;
+  line-height:1.15;
+  color:#fff;
+  margin:0;
+}
+
+.card-solucion{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:130px;
+}
+
+.card-solucion p{
+  color:rgba(255,255,255,.85);
+  font-size:1rem;
+  line-height:1.5;
+  margin:0;
+}
+
+.probs .card{
+  position:relative;
+  overflow:hidden;
+}
+
+.card-toggle{
+  position:absolute;
+  top:12px;
+  right:12px;
+
+  width:42px;
+  height:42px;
+
+  border:none;
+  border-radius:50%;
+
+  background:rgba(255,255,255,.92);
+  color:var(--teal);
+
+  cursor:pointer;
+
+  font-size:1.1rem;
+  font-weight:700;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.18);
+
+  transition:.25s;
+  z-index:5;
+}
+
+.card-toggle:hover{
+  transform:scale(1.08);
+}
+
+.card-toggle.activa{
+  background:var(--mostaza);
+}
+
 /* =========================================
    7. PLANES
    ========================================= */
