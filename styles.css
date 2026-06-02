@@ -437,7 +437,7 @@ nav ul a:hover { color: var(--teal); }
 /* Tera decorativa — asomándose desde el video */
 .tera-deco {
   position: absolute;
-  left: -20px;
+  left: 35%;
   bottom: -40px;
   width: 160px;
   pointer-events: none;
